@@ -19,13 +19,13 @@ public class App extends Application {
 
         StackPane root = new StackPane(canvas);
 
-        Image img = new Image(getClass().getResourceAsStream("/assets/rocks.png"));
+        //Image img = new Image(getClass().getResourceAsStream("/assets/rocks.png"));
         AnimationTimer timer = new AnimationTimer() {
             @Override
             public void handle(long now) {
                 gc.setFill(Color.rgb(20, 20, 35));
                 gc.fillRect(0, 0, 800, 600); // Cancella tutto
-                gc.drawImage(img,24,24,24,24,0,0,100,100);
+                //gc.drawImage(img,24,24,24,24,0,0,100,100);
             }
         };
         timer.start();
@@ -35,7 +35,7 @@ public class App extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         launch(args);
-    }
+    }*/
 }
