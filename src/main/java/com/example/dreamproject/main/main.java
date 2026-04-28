@@ -1,4 +1,4 @@
 package com.example.dreamproject.main;
 
-public class js {
+public class main {
 }
